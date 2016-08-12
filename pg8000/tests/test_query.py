@@ -397,7 +397,7 @@ class Tests(unittest.TestCase):
         self.assertTrue('__exit__' in pg8000.core.Cursor.__dict__)
 
         with self.db.cursor() as cursor:
-            cursor.execute('select 1');
+            cursor.execute('select 1')
 
 
 if __name__ == "__main__":
